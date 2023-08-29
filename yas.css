@@ -1,0 +1,449 @@
+body{
+    background-color: #bfddf3; /*muda cor de fundo*/
+    grid-gap: 20px; color: black;/*é um atalho para declarar as duas propriedades em um só lugar e muda cor da letra*/
+    display: grid;/*muda display do body para valor grid*/
+    grid-template-areas: /*define area do grid*/
+    "come come come"
+    "cant meio meio"
+    "fina fina fina";
+    grid-template-columns: auto auto auto; /*indicar qual o tamanho de cada coluna que queremos*/
+    grid-template-rows: auto auto auto; /*é usada apenas nos elementos filhos de um grid container e ela recebe dois valores: linha de início e linha de término*/
+  }
+  /*aplicar propriedades css à logo*/
+  .pompom{
+    position: absolute; /*propriedade que permite mudar o lugar*/
+    left: 75%; /*muda item para esquerda*/
+    top: 50%; /*define se o conteudo ira para baixo ou para cima*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  }
+  /*aplicar propriedades css ao nome da livraria*/
+  .dinizi{
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    top: 0px; /*define se o conteudo ira para baixo ou para cima*/  
+    left: 80px;/*muda item para esquerda*/
+  }
+  /*aplicar propriedades css à escrita meu carinho*/
+  .nao{
+    position: absolute; /*propriedade que permite mudar o lugar*/
+    right: 50%;  /*muda item para direita*/
+    top: 10px;/*define se o conteudo ira para baixo ou para cima*/  
+  }
+  /*posiciona a escrita "cadastro"*/
+  .cad{
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    right: 50%;/*muda item para direita*/
+    top: 10px;/*define se o conteudo ira para baixo ou para cima*/  
+  }
+  /*posiciona a escrita "produto"*/
+  .pody{
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    right: 50%;/*muda item para direita*/
+    top: 10px;/*define se o conteudo ira para baixo ou para cima*/  
+  }
+  /*aplicar propriedades css ao header*/
+  .comeco{
+    grid-area: come;/*define o apilido para configuraçao do grid*/
+    background-color: 	#00009C;/*muda cor de fundo*/
+    position: relative;/*propriedade que permite mudar o lugar*/
+  }
+  /*aplicar propriedades css ao main*/
+  .meio{
+    grid-area: meio;/*define o apilido para configuraçao do grid*/
+    background-color: #bfddf3;/*muda cor de fundo*/
+    position: relative;/*propriedade que permite mudar o lugar*/
+    margin-left: 200px;/*define a margin*/
+    height: 100%; /*define altura*/
+  
+  }
+  /*aplicar propriedades css ao aside*/
+  .canto{
+    grid-area: cant;/*define o apilido para configuraçao do grid*/
+    background-color: #bfddf3;;/*muda cor de fundo*/
+    height: auto; /*define altura*/
+  }
+  /*aplicar propriedades css ao foother*/
+  .final{
+    grid-area: fina;/*define o apilido para configuraçao do grid*/
+    background-color:	#00009C;/*muda cor de fundo*/
+  }
+  /*aplicar propriedades css à img do insta*/
+  .insta{
+    margin: 10px;/*define a margin*/
+  }
+  /*aplicar propriedades css à img do whats*/
+  .whatss{
+    margin: 10px;/*define a margin*/
+  }
+  /*aplicar propriedades css à img do telefone*/
+  .tele{
+    margin: 10px;/*define a margin*/
+  }
+  /*aplicar propriedades css as barras de preenchimento do formulario*/
+  .bloco label{
+    display: block;/*define o valor do display*/
+  }
+  /*aplicar propriedades css as barras de preenchimento do formulario*/
+  .bloco{
+    float: left;/*usa para posicionar algo na tela*/
+    margin-right: 5px;/*define a margin*/
+  }
+  input, select, textarea, button{
+    border-radius: 5px; /*aredondamento das bordas*/
+    color: #b31415;/*define a cor da letra*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);/*é uma propriedade utilizada para adicionar sombras internas */
+  }
+  /*esta tirando o efeito da letra*/
+  .letra_normal input{
+    box-shadow: none;/*é uma propriedade utilizada para adicionar sombras internas */
+  }
+  /*aplicar propriedades css aonde ponhara informacao do formulario*/
+  fieldset{
+    border: none;/*configura a borda*/
+  }
+  /*aplicar propriedades css á barra de pesquisa*/
+  #divBusca{
+    background-color: #bfddf3;/*muda cor de fundo*/
+    border:solid 1px;/*coloca e configura a borda*/
+    border-radius:15px;/*aredondamento das bordas*/
+    width:300px; /*define a lagura*/
+    position: sticky; /*propriedade que permite mudar o lugar*/
+    position: absolute; /*propriedade que permite mudar o lugar*/
+    right: 50%;/*muda item para direita*/
+    top: 2%;/*define se o conteudo ira para baixo ou para cima*/  
+  }
+  /*aplicar propriedades css á barra de pesquisa*/
+  #txtBusca{
+    float:left;/*usa para posicionar algo na tela*/
+    background-color:transparent;/*muda cor de fundo*/
+    padding-left:5px;/*define margin interna*/
+    font-style:italic;/*define fonte da letra*/
+    font-size:18px;/*define fonte da letra*/
+    border:none;/*coloca e configura a borda*/
+    height:32px;/*define altura*/
+    width:260px;/*define a lagura*/
+  }
+  /*aplicar propriedades css ao pai dos card*/
+  .pai{
+    background: white;/*muda cor de fundo*/
+    width: 13rem;/*define a lagura*/
+    padding-top: 25px;/*define margin interna*/
+    padding-bottom: 25px;/*define margin interna*/
+    padding-left: 25px;/*define margin interna*/
+    padding-right: 25px;/*define margin interna*/
+    border: 4px solid black;/*coloca e configura a borda*/
+    border-radius: 10px;/*aredondamento das bordas*/
+    text-align: center;/*centralizar texto*/
+    color: #000000;/*define a cor da letra*/
+    font-family: "Poppins", sans-serif;/*define fonte da letra*/
+    transition: all 0.3s ease;/*definir tempo de uma ação*/
+    flex-wrap: wrap; /*define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas*/
+    display: inline-block;/*define o valor do display*/
+    position: relative;/*propriedade que permite mudar o lugar*/
+    margin: 10px;/*define a margin*/
+    justify-content: center;/*é empregada para alinhar os elementos ao longo do eixo principal*/
+    align-items: center; /*centralizar intens*/
+    height: auto;/*define altura*/
+  }
+  /*aplicar propriedades css ao pai dos card quando coloca o mouse*/
+  .pai:hover{
+    transform: translateY(-10px);
+  }
+  /*posiciona o nome do livro no card*/
+  .livro2{
+    margin: 0;/*define a margin*/
+    margin-top: 20px;/*define a margin*/
+    font-weight: 600;/*define fonte da letra*/
+    font-size: 18px;/*define fonte da letra*/
+  }
+  /*posiciona o nome do livro no card*/
+  .livro2 span {
+    display: block;/*define o valor do display*/
+    font-weight: 200;/*define fonte da letra*/
+    font-size: 16px;/*define fonte da letra*/
+  }
+  /*deixar a linha acima do valor do card*/
+    .media:before {
+    content: " ";/*para gerar conteúdo em um elemento*/
+    display: block;/*define o valor do display*/
+    width: 100%;/*define a lagura*/
+    height: 2px;/*define altura*/
+    margin: 20px 0;/*define a margin*/
+    background: #000000;/*muda cor de fundo*/
+  }
+  /*deixar a linha acima do valor do card*/
+  .media a {
+    position: relative;/*propriedade que permite mudar o lugar*/
+    margin-right: 15px;/*define a margin*/
+    text-decoration: none;/*decoraçao do texto*/
+    color: inherit;/*define a cor da letra*/
+  }
+  /*deixar a linha acima do valor do card*/
+  .media a:last-child {
+    margin-right: 0;/*define a margin*/
+  }
+  /*deixar a linha acima do valor do card*/
+  .media a svg {
+    width: 1.1rem;/*define a lagura*/
+    fill: currentColor; /*as dimensões do elemento substituído são alteradas para os valores iguais às dimensões do box container*/
+  }
+  /*aplicar propriedades css ao menu do aside*/
+  .meen {
+    background:	#00009C;/*muda cor de fundo*/
+    width: 250px;/*define a lagura*/
+    height: 100%;/*define altura*/
+  }
+  /*aplicar propriedades css ao ul do menu do aside*/
+  .meen ul {
+    padding: 0px;/*define margin interna*/
+    background:	#00009C;/*muda cor de fundo*/
+    height: 100%;/*define altura*/
+    width: 100%;/*define a lagura*/
+    list-style: none;/*é a maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
+  }
+  /*aplicar propriedades css ao li dentro do ul do menu do aside*/
+  .meen ul li {
+    line-height: 50px;/*permite controlar o espaçamento entre as linhas de um texto*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);/*define borda do botao*/
+  }
+  /*aplicar propriedades css ao a dentro li dentro do ul do menu do aside*/
+  .meen ul li a {
+    color: white;/*define a cor da letra*/
+    font-size: 15px;/*define a fonte da letra*/
+    text-decoration: none;/*decoraçao do texto*/
+    display: inline-block;/* ADICIONAR AS LINHAS ABAIXO */
+    width: 100%;/*define a lagura*/
+  }
+  /*aplicar propriedades css ao ul do menu do aside quando passa o mouse em cima*/
+  .meen ul li:hover {
+    background:#00009C;/*muda cor de fundo*/
+  }/*aplicar propriedades css ao ul do menu do aside*/
+  .meen ul ul {
+    display: none;/*zera o display*/
+  }/*aplicar propriedades css ao ul do menu do aside e itenbtn e mostra*/
+  .meen ul .itenbtn.mostra {
+    display: block;/*define o disolay*/
+  }
+  /*aplicar propriedades css à todos o th*/
+  th{
+    display: inline-block;/*da valor ao display*/
+    margin-left: 70px;/*define a margin*/
+    margin-right: 70px;/*define a margin*/
+  }
+  .form-control{
+    width: 50px;/*define a lagura*/
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    right: 69%;/*muda item para direita*/
+    top: 100px;/*define se o conteudo ira para baixo ou para cima*/  
+  }
+  /*aplicar propriedades css á img do produto, valor, totale quantidade*/
+  .td{
+    text-align: center;
+    width: 300px;/*define a lagura*/
+    background-color: #f5deb3b5;/*muda cor de fundo*/
+  }
+  /*aplicar propriedades css produtos do carinho*/
+  .tabela{
+    background:	#00009C;/*muda cor de fundo*/
+  }
+  /*aplicar propriedades css á escrita de cima do produto*/
+  .table{
+    background-color: #000000;/*muda cor de fundo*/
+  }
+  /*aplicar propriedades css à classe de contêiner*/
+  .container1 {
+    justify-content: center;/*é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    align-items: center;/*deixar itens ao centro*/
+    display: flex;/*da valor ao display*/
+    height: 100%;/*define altura*/
+    text-align: center;/*deixa texto no centro*/
+  }
+  /*aplicar propriedades css à tag do botão*/
+  .butao{
+    width: 30px;/*define a lagura*/
+    height: 20px;/*define altura*/
+    font-size: 15px;/*muda a letra*/
+    background-color: 	#00009C;/*muda cor de fundo*/
+    color: honeydew;/*define a cor da letra*/
+  }
+  /*aplique o efeito de foco à tag do botão*/
+  .butao:hover {
+    background-color:	#00009C;/*muda cor de fundo*/
+    color: rgb(0, 0, 0);/*define a cor da letra*/
+  }
+  /*configuraçoes do botao*/
+  .btn {
+    background-color: #f0ecfc;/*muda cor de fundo*/
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);/*imagem de fundo*/
+    line-height: 42px;/*permite controlar o espaçamento entre as linhas de um texto*/
+    padding: 0;/*define margin interna*/
+    border: none;/*zera borda*/
+    color: #000000;/*define a cor da letra*/
+    width: 90px;/*define a lagura*/
+    height: 50px;/*define altura*/
+    position: relative;/*propriedade que permite mudar o lugar*/
+    left: 85%;/*muda item para esquerda*/
+    border: #000000 2px solid;/*define a borda*/
+  }
+  .btn span {
+    position: relative;/*propriedade que permite mudar o lugar*/
+    display: block;/*define display*/
+    width: 100%;/*define a lagura*/
+    height: 100%;/*define altura*/
+  }
+  /*da estilo ao botao de compra no carinho*/
+  .btn:before,.btn:after {
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    content: "";/*para gerar conteúdo em um elemento*/
+    right: 0;/*muda item para direita*/
+    bottom: 0; /*é possível definir a posição vertical do elemento em relação a sua borda inferior*/
+    background: #c797eb;/*muda cor de fundo*/
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition: all 0.3s ease;/*tempo de transiçao*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn:before{
+    height: 0%;/*define altura*/
+    width: 2px;/*define a lagura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn:after {
+    width: 0%;/*define a lagura*/
+    height: 2px;/*define altura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn:hover:before {
+    height: 100%;/*define altura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn:hover:after {
+    width: 100%;/*define a lagura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn:hover{
+    background: transparent;/*muda cor de fundo*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn span:hover{
+    color: #c797eb;/*define a cor da letra*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn span:before,.btn span:after {
+    position: absolute;/*propriedade que permite mudar o lugar*/
+    content: "";
+    left: 0;/*muda item para esquerda*/
+    top: 0;/*define se o conteudo ira para baixo ou para cima*/  
+    background: #c797eb;/*muda cor de fundo*/
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+    transition: all 0.3s ease;/*tempo de transaçao*/
+  }
+  /*modifica botao de compra no carinho*/
+  
+  .btn span:before {
+    width: 2px;/*define a lagura*/
+    height: 0%;/*define altura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn span:after {
+    height: 2px;/*define altura*/
+    width: 0%;/*define a lagura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn span:hover:before {
+   height: 100%;/*define altura*/
+  }
+  /*modifica botao de compra no carinho*/
+  .btn span:hover:after {
+   width: 100%;/*define altura*/
+  }
+  /*muda de lugar o class posi*/
+  .posi{
+    position: relative;/*propriedade que permite mudar o lugar*/
+    right: -90px;/*muda item para direita*/
+  }
+  /*aplicar propriedades css ao menu*/
+  .menu{
+    height: 50px;/*define altura*/
+  }
+  /*aplicar propriedades css ao body do carinho*/
+  .poze{
+    grid-gap: 20px; color: black;/*é um atalho para declarar as duas propriedades em um só lugar e muda cor da letra*/
+    display: grid;/*muda display do body para valor grid*/
+    grid-template-areas: /*define area do grid*/
+    "come come come"
+    "fund fund fund"
+    "fina fina fina";
+    grid-template-columns: auto auto auto;/*indicar qual o tamanho de cada coluna que queremos*/
+    grid-template-rows: auto auto auto; /*é usada apenas nos elementos filhos de um grid container e ela recebe dois valores: linha de início e linha de término*/
+  }
+  /*aplicar propriedades css ao main do carinho*/
+  .fund{
+    grid-area: fund;
+    background-color:  #bfddf3;/*muda cor de fundo*/
+    justify-content: center;/*é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    margin-left: 100px;/*define a margin*/
+    margin-right: 100px;/*define a margin*/
+    height: 100%;/*define altura*/
+  }
+  /*responsividade para 768*/
+  @media screen and (min-width: 768px) {
+    body{
+      display: grid;/*muda display do body para valor grid*/
+      grid-template-areas: /*define area do grid*/
+      "come come come"
+      "cant meio meio"
+      "fina fina fina";
+      grid-template-columns: max-content, max-content,max-content;/*indicar qual o tamanho de cada coluna que queremos*/
+    }
+    #divBusca{
+      background-color:#bfddf3;/*muda cor de fundo*/
+      border:solid 1px;/*define borda*/
+      border-radius:15px;/*aredondamento da borda*/
+      width:300px;/*define a lagura*/
+      position: absolute;/*propriedade que permite mudar o lugar*/
+      right: 60%;/*muda item para direita*/
+      top: 20%;/*define se o conteudo ira para baixo ou para cima*/  
+    }
+    .poze{
+      grid-gap: 20px; color: black;
+      display: grid;/*muda display do body para valor grid*/
+      grid-template-areas:  /*define area do grid*/
+      "come come come"
+      "fund fund fund"
+      "fina fina fina";
+      grid-template-columns: auto auto auto;/*indicar qual o tamanho de cada coluna que queremos*/
+      grid-template-rows: auto auto auto; /*é usada apenas nos elementos filhos de um grid container e ela recebe dois valores: linha de início e linha de término*/
+    }
+    .fund{
+      grid-area: fund;/*define nome para posicionar no grid*/
+      background-color: #F5DEB3;/*muda cor de fundo*/
+      justify-content: center;/*é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+      height: 100%;/*define altura*/
+    }
+  }
+  /*responsividade para 380*/
+  @media screen and (min-width: 380px) {
+    body{
+      display: grid;/*muda display do body para valor grid*/
+      grid-template-areas:  /*define area do grid*/
+      "come come come"
+      "cant meio meio"
+      "fina fina fina";
+      grid-template-columns: max-content, max-content,max-content;/*indicar qual o tamanho de cada coluna que queremos*/
+    }
+    #divBusca{
+      background-color:#bfddf3;/*muda cor de fundo*/
+      border:solid 1px;/*define borda*/
+      border-radius:15px;/*aredondamento da borda*/
+      width:300px;/*define a lagura*/
+      position: absolute;/*propriedade que permite mudar o lugar*/
+      right: 30%;/*muda item para direita*/
+      top: 20%;/*define se o conteudo ira para baixo ou para cima*/  
+    }
+  }
+  
+  
