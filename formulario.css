@@ -1,0 +1,48 @@
+body{
+    background-color: #bde0fe;
+    color: #000000;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.letra_normal label{
+    font-weight: 100;
+}
+
+.bloco label{
+    display: block;
+}
+
+.bloco{
+    margin-right: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    color: #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.letra_normal input{
+    box-shadow: none;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset button a{
+    text-decoration: none;
+    color: #000000;
+    padding: 50px;
+}
